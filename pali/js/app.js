@@ -5,4 +5,31 @@
 // alla fine stampate in console un messaggio per dire all’utente il risultato del controllo
 
 
+const userWord = prompt("Scrivi una parola"); //string
+console.log(userWord);
 
+let result = compare(userWord)
+
+
+function compare (word){
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+    // if(){
+    //     return true
+    // }
+    // else{
+    //     return false
+    // }
+
+// }
