@@ -14,7 +14,7 @@ const userOddEven = prompt("scgli pari o dispari");
 
         const userNumber = prompt("Inserisci un numero da 1 a 5");
 
-        if(userNumber >= 0 && userNumber <= 5){
+        if(userNumber > 0 && userNumber <= 5){
 
             console.log(`Giocatore sceglie: ${userOddEven} con il numero: ${userNumber}`)
 
@@ -36,9 +36,6 @@ const userOddEven = prompt("scgli pari o dispari");
 
 
 
-
-    
-
 function randomNumberGenerator (min, max){
 
     let randomNumber = Math.floor(Math.random() * (max)) + min; 
@@ -47,21 +44,24 @@ function randomNumberGenerator (min, max){
 }
 
 
-
-
-
 function oddOrEven (numbA, numbB){
 
-    const sum = numbA + numbB;
+    const numberOne = parseInt(numbA); //number
+    const numbertwo = parseInt(numbB); //number
 
-    let evenCheck = sum % 2;
+    const sum = numberOne + numbertwo;
+
+    const evenOrOddCheck = sum % 2;
     
-    if(evenCheck === 0){
+    if(evenOrOddCheck === 0){
         console.log("Vince Pari")
+        // console.log(sum)
+        // console.log(evenOrOddCheck)
     }
     else{
         console.log("Vince dispari")
+        // console.log(sum)
+        // console.log(evenOrOddCheck)
     }
-
 }
 

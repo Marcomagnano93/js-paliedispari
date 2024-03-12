@@ -6,30 +6,42 @@
 
 
 const userWord = prompt("Scrivi una parola"); //string
-console.log(userWord);
+// console.log(userWord);
 
-let result = compare(userWord)
+const result = compare(userWord);
+
+
+    if(result === true){
+        console.log(`la parola ${userWord} è palindroma!`)
+    }
+    else{
+        console.log(`la parola ${userWord} non è palindroma, provane un'altra`)
+    }
+
+
 
 
 function compare (word){
+    // let word = userWord;
 
-    
+        for(let i = 0; i < word.length; i++){
+
+
+            let index = i; //number
+            let WordLength = word.at(index);
+
+            // console.log(WordLength)
+            
+            let indexReverse = -1 - i; //number
+            let WordLengthReverse = word.at(indexReverse);
+            // console.log(WordLengthReverse)
+            // console.log(indexReverse)
+
+            if(WordLength === WordLengthReverse){
+                return true
+            }
+            else{
+                return false
+            }
+        }
 }
-
-
-
-
-
-
-
-
-
-
-    // if(){
-    //     return true
-    // }
-    // else{
-    //     return false
-    // }
-
-// }
